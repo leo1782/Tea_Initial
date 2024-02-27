@@ -1,0 +1,28 @@
+import unittest
+
+class TestProtocol(unittest.TestCase):
+    def setUp(self):
+        # O código de configuração vai aqui. Isso pode envolver a criação de um cliente de teste, 
+        # configurando o estado necessário, etc.
+        self.client = None  # Substitua pelo código de configuração real
+
+    def tearDown(self):
+        # O código de desmontagem vai aqui. Isso pode envolver a limpeza de qualquer estado, 
+        # fechando conexões, etc.
+        pass  # Substitua pelo código de desmontagem real
+
+    def test_protocol_functionality(self):
+        # Este é um caso de teste de exemplo. Você deve substituir isso por testes reais 
+        # para o seu protocolo.
+
+        # Organizar
+        expected_result = "resultado esperado"  # Substitua pelo resultado esperado real
+
+        # Agir
+        result = self.client.send_request("solicitação de teste")  # Substitua pelo código real para testar o protocolo
+
+        # Afirmar
+        self.assertEqual(result, expected_result)
+
+if __name__ == "__main__":
+    unittest.main()
